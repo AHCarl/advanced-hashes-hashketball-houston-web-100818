@@ -198,7 +198,7 @@ def big_shoe_rebounds
       end
     end
   end
-  game_hash[team][:players][bigfoot][biggest]
+  game_hash[team][:players][bigfoot][:rebounds]
 end
         
         
