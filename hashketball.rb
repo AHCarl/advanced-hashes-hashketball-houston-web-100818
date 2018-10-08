@@ -162,7 +162,7 @@ def team_names
   names
 end
 
-def player_numbers(team)
-  game_hash.each do |location, team_data|
-    team_data.each do |attribute, data|
+#def player_numbers(team)
+#  game_hash.each do |location, team_data|
+#    team_data.each do |attribute, data|
       
