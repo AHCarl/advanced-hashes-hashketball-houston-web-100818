@@ -183,4 +183,27 @@ def player_stats(player)
     end
   end
 end
-      
+
+def big_shoe_rebounds
+  biggest = 0
+  bigfoot = ""
+  team = ""
+  
+  game_hash.each do |location, team_data|
+    team_data[:players].each do |name, stat|
+      if stat[:shoe] > biggest
+        biggest = stat[:shoe]
+        bigfoot = name 
+        team = location
+      end
+    end
+  end
+  game_hash[team][:players][bigfoot][biggest]
+end
+        
+        
+        
+        
+        
+        
+        
